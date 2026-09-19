@@ -1,10 +1,7 @@
 name: CI
 
-on:
-  push:
-    branches: [main]
-  pull_request:
-  workflow_dispatch:
+# Run the two-service verification only when explicitly requested from Actions.
+on: workflow_dispatch
 
 permissions:
   contents: read
